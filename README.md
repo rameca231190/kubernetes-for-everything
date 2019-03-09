@@ -41,5 +41,5 @@
   
   
    create hosted zone: aws route53 create-hosted-zone --name prodmyterraform.com \
---vpc VPCRegion=eu-west-1,VPCId=vpc-03c0e465 \
+--vpc VPCRegion=eu-west-1,VPCId=vpc-01d7767b \
 --caller-reference 2014-04-01-18:4
