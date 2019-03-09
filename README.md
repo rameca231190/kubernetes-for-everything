@@ -38,3 +38,8 @@
 
 
   kops create cluster --name=qanovemberterraform.com --node-size="t2.micro" --master-size="t2.micro" --master-zones="eu-west-1a,eu-west-1b,eu-west-1c" --networking="weave" --topology="private" --bastion="true" --dns="private" --zones="eu-west-1a,eu-west-1b,eu-west-1c" --state="s3://qanovemberterraforms.com" --out= --target=terraform
+  
+  
+   create hosted zone: aws route53 create-hosted-zone --name prodmyterraform.com \
+--vpc VPCRegion=eu-west-1,VPCId=vpc-03c0e465 \
+--caller-reference 2014-04-01-18:4
